@@ -10242,6 +10242,10 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Color palette  */
 /* HEADER */
 .UpBarr {
@@ -10295,4 +10299,114 @@ li {
 }
 #core .container .card .img {
   height: 200px;
+}
+#core .col-12 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#core .col-12 .btn {
+  border: 1px solid #0282f9;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #0282f9;
+  border-radius: 5px;
+}
+#core .col-12 a {
+  color: white !important;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+#banner .row {
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  flex-wrap: nowrap;
+}
+#banner .card {
+  background-color: transparent;
+  border: none;
+}
+#banner .card a {
+  display: flex;
+  padding: 2rem;
+  color: white;
+  font-size: 14;
+  font-weight: 600;
+}
+#banner .card img {
+  width: 50px;
+}
+#banner .card h5 {
+  text-transform: uppercase;
+  padding: 0.4rem;
+  align-self: center;
+}
+
+.bg-row {
+  background-color: #0282f9;
+}
+
+#footer {
+  background-image: url("../img/footer-bg.jpg");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#footer .row .col {
+  margin: 10px;
+}
+#footer .row .col h4 {
+  color: white;
+  text-transform: uppercase;
+}
+#footer .row .col ul {
+  padding-left: 0px;
+}
+#footer .row .col ul li {
+  margin-bottom: 0.1rem;
+}
+#footer .row .col ul li a {
+  color: grey;
+}
+#footer .row .col img {
+  width: 600px;
+  margin-top: -120px;
+}
+
+#NavBar {
+  height: 100px;
+  background-color: #303030;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+#NavBar .row {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#NavBar .row .col .btn a {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #0282f9;
+}
+#NavBar .row .col h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0282f9;
+}
+
+.icons img {
+  width: 30px;
+  margin-top: 3px;
+  padding: 3px;
 }
