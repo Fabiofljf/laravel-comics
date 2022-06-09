@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $navbarr = config("db.navbarr");
-    return view('home', compact('navbarr'));
+    $cards = config("db.cards");
+    return view('home', compact('navbarr','cards'));
 })->name('home');

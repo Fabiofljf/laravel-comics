@@ -20,7 +20,7 @@
             </div>
             <!-- /.col logo -->
             <div class="col">
-                <ul class="d-flex">
+                <ul class="d-flex mb-0">
                     @foreach ($navbarr as $nav)
                         <li>
                             <a href="#">{{$nav['title']}}</a>

@@ -1,4 +1,4 @@
-@use 'bootstrap';
+@use "bootstrap";
 // COMMONS ROULES
 * {
     margin: 0;
@@ -19,18 +19,51 @@ li {
 /* Color palette  */
 
 $Bg-Nav: white;
-$Bg-Primary: #0282F9;
-$Bg-Secondary: #1C1C1C;
+$Bg-Primary: #0282f9;
+$Bg-Secondary: #1c1c1c;
 $Bg-Tertiary: #303030;
 $C-NavBar: #464646;
-// HEADER
+
+/* HEADER */
+
 .UpBarr {
     background-color: $Bg-Primary;
 }
 
+.DownBarr {
+    .row {
+        height: 100px;
+        .col {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            img {
+                width: 75px;
+            }
+        }
+    }
+    li {
+        list-style-type: none;
+        text-transform: uppercase;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        a {
+            color: $C-NavBar;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover,
+            &.active {
+                color: $Bg-Primary;
+                border-bottom: 10px solid $Bg-Primary;
+                padding-bottom: 46px;
+            }
+        }
+    }
+}
+
 //MAIN
 #jumbotron {
-    background-image: url('../assets/img/jumbotron.jpg');
+    background-image: url("../img/jumbotron.jpg");
     height: 400px;
     background-position: initial;
     background-size: cover;
@@ -38,132 +71,131 @@ $C-NavBar: #464646;
 }
 
 #core {
+    background-color: $Bg-Secondary;
     .container {
         padding: 5rem;
-    }
-}
-
-#banner {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    .row {
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-        flex-wrap: nowrap;
-    }
-    .card {
-        a {
-            display: flex;
-            padding: 2rem;
-            color: white;
-            font-size: 14;
-            font-weight: 600;
-        }
-        img {
-            width: 50px;
-        }
-        h5 {
-            text-transform: uppercase;
-            padding: 0.4rem;
-            align-self: center;
-        }
-    }
-}
-
-.bg-row {
-    background-color: $Bg-Primary;
-}
-
-.col-12 {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    .btn {
-        border: 1px solid $Bg-Primary;
-        padding: 15px;
-        text-transform: uppercase;
-        background-color: $Bg-Primary;
-        border-radius: 5px a {
-            color: white;
-            text-decoration: none;
-        }
-    }
-}
-
-// FOOTER
-#footer {
-    background-image: url('../img/footer-bg.jpg');
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.row {
-    justify-content: space-around;
-}
-
-.col {
-    .col {
-        margin: 10px;
-        h4 {
-            color: white;
-            text-transform: uppercase;
-        }
-        li {
-            list-style-type: none;
-            margin-bottom: 0.1rem;
-            a {
-                text-decoration: none;
-                color: grey;
+        .card {
+            background-color: transparent;
+            .img {
+                height: 200px;
             }
         }
     }
 }
 
-.col {
-    img {
-        width: 600px;
-        margin-top: -120px;
-    }
-}
-
-#NavBar {
-    height: 100px;
-    background-color: $Bg-Tertiary;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    .row {
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        .col {
-            .btn {
-                a {
-                    padding: 10px;
-                    text-transform: uppercase;
-                    color: white;
-                    font-weight: 600;
-                    border: 1px solid $Bg-Primary;
-                }
-            }
-        }
-        .col {
-            h4 {
-                text-transform: uppercase;
-                font-weight: 600;
-                color: $Bg-Primary;
-            }
-        }
-    }
-}
-
-.icons img {
-    width: 30px;
-    margin-top: 3px;
-    padding: 3px;
-}
+// #banner {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     z-index: 1;
+//     .row {
+//         justify-content: space-around;
+//         align-items: center;
+//         width: 70%;
+//         flex-wrap: nowrap;
+//     }
+//     .card {
+//         a {
+//             display: flex;
+//             padding: 2rem;
+//             color: white;
+//             font-size: 14;
+//             font-weight: 600;
+//         }
+//         img {
+//             width: 50px;
+//         }
+//         h5 {
+//             text-transform: uppercase;
+//             padding: 0.4rem;
+//             align-self: center;
+//         }
+//     }
+// }
+// .bg-row {
+//     background-color: $Bg-Primary;
+// }
+// .col-12 {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 50px;
+//     .btn {
+//         border: 1px solid $Bg-Primary;
+//         padding: 15px;
+//         text-transform: uppercase;
+//         background-color: $Bg-Primary;
+//         border-radius: 5px a {
+//             color: white;
+//             text-decoration: none;
+//         }
+//     }
+// }
+// // FOOTER
+// #footer {
+//     background-image: url("../img/footer-bg.jpg");
+//     height: 400px;
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+// .row {
+//     justify-content: space-around;
+// }
+// .col {
+//     .col {
+//         margin: 10px;
+//         h4 {
+//             color: white;
+//             text-transform: uppercase;
+//         }
+//         li {
+//             list-style-type: none;
+//             margin-bottom: 0.1rem;
+//             a {
+//                 text-decoration: none;
+//                 color: grey;
+//             }
+//         }
+//     }
+// }
+// // .col {
+// //     img {
+// //         width: 600px;
+// //         margin-top: -120px;
+// //     }
+// // }
+// #NavBar {
+//     height: 100px;
+//     background-color: $Bg-Tertiary;
+//     position: relative;
+//     z-index: 1;
+//     display: flex;
+//     .row {
+//         justify-content: space-around;
+//         align-items: center;
+//         width: 100%;
+//         .col {
+//             .btn {
+//                 a {
+//                     padding: 10px;
+//                     text-transform: uppercase;
+//                     color: white;
+//                     font-weight: 600;
+//                     border: 1px solid $Bg-Primary;
+//                 }
+//             }
+//         }
+//         .col {
+//             h4 {
+//                 text-transform: uppercase;
+//                 font-weight: 600;
+//                 color: $Bg-Primary;
+//             }
+//         }
+//     }
+// }
+// .icons img {
+//     width: 30px;
+//     margin-top: 3px;
+//     padding: 3px;
+// }
