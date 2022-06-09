@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+    <title>Laravel</title>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    </head>
-    <body>
-        sono in app.php
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
-        @include('partials.header')
-        <!-- /#site_header -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+</head>
 
-        <main id="site_main"></main>
-        <!-- /#site_main -->
+<body>
+    
+    @include('partials.header')
+    <!-- /#site_header -->
 
-        @include('partials.footer')
-        <!-- /#site_footer -->
+    <main id="site_main">
+        @yield('content')
+    </main>
+    <!-- /#site_main -->
 
-        <!-- script js -->
-        <script src="{{asset('js/app.js')}}"></script>
-    </body>
+    @include('partials.footer')
+    <!-- /#site_footer -->
+
+    <!-- script js -->
+    <script src="{{asset('js/app.js')}}"></script>
+</body>
+
 </html>
