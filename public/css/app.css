@@ -10404,8 +10404,7 @@ a {
   font-weight: 600;
   color: #0282f9;
 }
-
-.icons img {
+#NavBar .icons img {
   width: 30px;
   margin-top: 3px;
   padding: 3px;
