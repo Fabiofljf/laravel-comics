@@ -10,6 +10,11 @@ img {
     max-width: 100%;
 }
 
+// UTILITIES
+li {
+    list-style-type: none;
+}
+
 
 /* Color palette  */
 
@@ -19,9 +24,8 @@ $Bg-Secondary: #1C1C1C;
 $Bg-Tertiary: #303030;
 $C-NavBar: #464646;
 // HEADER
-#site_header {
-    height: 150px;
-    background-color: red;
+.UpBarr {
+    background-color: $Bg-Primary;
 }
 
 //MAIN
@@ -78,8 +82,11 @@ $C-NavBar: #464646;
     justify-content: center;
     margin-top: 50px;
     .btn {
-        @include btn;
-        a {
+        border: 1px solid $Bg-Primary;
+        padding: 15px;
+        text-transform: uppercase;
+        background-color: $Bg-Primary;
+        border-radius: 5px a {
             color: white;
             text-decoration: none;
         }
@@ -159,13 +166,4 @@ $C-NavBar: #464646;
     width: 30px;
     margin-top: 3px;
     padding: 3px;
-}
-
-// MIXIN
-@mixin btn {
-    border: 1px solid $Bg-Primary;
-    padding: 15px;
-    text-transform: uppercase;
-    background-color: $Bg-Primary;
-    border-radius: 5px
 }

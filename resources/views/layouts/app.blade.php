@@ -15,8 +15,10 @@
 </head>
 
 <body>
-    
-    @include('partials.header')
+
+    <header id="site_header">
+        @include('partials.header')
+    </header>
     <!-- /#site_header -->
 
     <main id="site_main">

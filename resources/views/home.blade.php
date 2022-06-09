@@ -1,9 +1,8 @@
+<!-- Estendo il css dentro sass>app.scss -->
 @extends('layouts.app')
 
 @section('content')
-
-
-<main id="project_core">
+    <main id="project_core">
         <section id="jumbotron"></section>
         <!-- /#jumbotron -->
         <section id="core" class="debug">
@@ -75,5 +74,4 @@
         <!-- /#banner -->
     </main>
     <!-- /#project_core -->
-
 @endsection

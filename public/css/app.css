@@ -10238,10 +10238,72 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Color palette  */
-#site_header {
-  height: 150px;
-  background-color: red;
+.UpBarr {
+  background-color: #0282F9;
+}
+
+#jumbotron {
+  background-image: url("../assets/img/jumbotron.jpg");
+  height: 400px;
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#core .container {
+  padding: 5rem;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+#banner .row {
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  flex-wrap: nowrap;
+}
+#banner .card a {
+  display: flex;
+  padding: 2rem;
+  color: white;
+  font-size: 14;
+  font-weight: 600;
+}
+#banner .card img {
+  width: 50px;
+}
+#banner .card h5 {
+  text-transform: uppercase;
+  padding: 0.4rem;
+  align-self: center;
+}
+
+.bg-row {
+  background-color: #0282F9;
+}
+
+.col-12 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.col-12 .btn {
+  border: 1px solid #0282F9;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #0282F9;
+  border-radius: 5px a;
+  border-radius-color: white;
+  border-radius-text-decoration: none;
 }
 
 #footer {
