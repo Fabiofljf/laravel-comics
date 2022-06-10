@@ -17,7 +17,7 @@
                 @endforeach
                 <div class="col-12">
                     <div class="btn text-light">
-                        <a href="#">load more</a>
+                        <a href="{{route('comics')}}">load more</a>
                     </div>
                 </div>
             </div>

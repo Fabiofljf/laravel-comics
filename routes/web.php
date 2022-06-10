@@ -30,7 +30,7 @@ Route::get('/comics', function () {
 
 // Modifico la rotta per mostrare i link delle singole card tramite un parametro id
 Route::get('/comics/{id}', function ($id) {
-    $cards = config("db.cards");
+    $cards = config("db.singleCards");
     if ($id >= 0 && is_numeric($id) && $id < count($cards)) {
         $card = $cards[$id];
         dd($card);
