@@ -1,4 +1,3 @@
-<!-- Estendo il css dentro sass>app.scss -->
 @extends('layouts.app')
 
 @section('content')

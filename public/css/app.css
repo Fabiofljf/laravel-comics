@@ -10246,6 +10246,10 @@ a {
   text-decoration: none;
 }
 
+.Bg_secondary {
+  background-color: #1c1c1c;
+}
+
 /* Color palette  */
 /* HEADER */
 .UpBarr {
@@ -10264,6 +10268,7 @@ a {
   width: 75px;
 }
 .DownBarr a {
+  text-transform: uppercase;
   color: #464646;
   font-weight: 600;
   text-decoration: none;
@@ -10273,6 +10278,7 @@ a {
   color: white;
 }
 
+/* HOME */
 #jumbotron {
   background-image: url("../img/jumbotron.jpg");
   height: 400px;
@@ -10343,6 +10349,18 @@ a {
 
 .bg-row {
   background-color: #0282f9;
+}
+
+/* CHARACTERS */
+#central_text {
+  z-index: 1;
+  position: relative;
+}
+
+/* COMICS */
+.comicsBg {
+  z-index: 1;
+  position: relative;
 }
 
 #footer {

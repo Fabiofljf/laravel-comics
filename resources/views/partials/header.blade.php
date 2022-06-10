@@ -19,10 +19,11 @@
                 <img src="../img/dc-logo.png" alt="logo comics">
             </div>
             <!-- /.col logo -->
-            <div class="col-8 d-flex">
-                <nav class="nav align-items-center">
-                    <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">Home</a>
-                    <a class="nav-link {{ Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">Comics</a>
+            <div class="col-9 d-flex">
+                <nav class="nav align-items-center flex-nowrap">
+                    <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">home</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'characters' ? 'active' : '' }}" href="{{route('characters')}}">characters</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">comics</a>
                     <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{route('movies')}}">movies</a>
                     <a class="nav-link {{ Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{route('tv')}}">tv</a>
                     <a class="nav-link {{ Route::currentRouteName() === 'games' ? 'active' : '' }}" href="{{route('games')}}">games</a>

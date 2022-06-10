@@ -15,48 +15,48 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $navbarr = config("db.navbarr");
     $cards = config("db.cards");
-    return view('home', compact('navbarr','cards'));
+    return view('home', compact('cards'));
 })->name('home');
 
 Route::get('/characters', function () {
-    return 'characers';
+    return view('characters');
 })->name('characters');
 
 Route::get('/comics', function () {
-    return 'comics';
+    $cards = config("db.cards");
+    return view('comics', compact('cards'));
 })->name('comics');
 
 Route::get('/movies', function () {
-    return 'movies';
+    return view('movies');
 })->name('movies');
 
 Route::get('/tv', function () {
-    return 'tv';
+    return view('tv');
 })->name('tv');
 
 Route::get('/games', function () {
-    return 'games';
+    return view('games');
 })->name('games');
 
 Route::get('/collecibles', function () {
-    return 'collecibles';
+    return view('collecibles');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return 'videos';
+    return view('videos');
 })->name('videos');
 
 Route::get('/fans', function () {
-    return 'fans';
+    return view('fans');
 })->name('fans');
 
 Route::get('/news', function () {
-    return 'news';
+    return view('news');
 })->name('news');
 
 Route::get('/shop', function () {
-    return 'shop';
+    return view('shop');
 })->name('shop');
 

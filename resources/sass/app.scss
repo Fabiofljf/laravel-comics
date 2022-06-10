@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+.Bg_secondary {
+    background-color: #1c1c1c;
+}
+
 
 /* Color palette  */
 
@@ -47,6 +51,7 @@ $C-NavBar: #464646;
         }
     }
     a {
+        text-transform: uppercase;
         color: $C-NavBar;
         font-weight: 600;
         text-decoration: none;
@@ -59,6 +64,9 @@ $C-NavBar: #464646;
 }
 
 //MAIN
+
+/* HOME */
+
 #jumbotron {
     background-image: url("../img/jumbotron.jpg");
     height: 400px;
@@ -129,6 +137,22 @@ $C-NavBar: #464646;
 
 .bg-row {
     background-color: $Bg-Primary;
+}
+
+
+/* CHARACTERS */
+
+#central_text {
+    z-index: 1;
+    position: relative;
+}
+
+
+/* COMICS */
+
+.comicsBg {
+    z-index: 1;
+    position: relative;
 }
 
 // FOOTER
