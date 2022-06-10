@@ -5,14 +5,18 @@
     <section id="core" class="comicsBg">
         <div class="container">
             <div class="row">
+                <!--  -->
                 @foreach($cards as $card)
                 <div class="col-2 p_2">
-                    <div class="card">
-                        <img src="{{$card['thumb']}}" alt="">
-                        <p class="text-light">{{$card['series']}}</p>
-                    </div>
+                    <a href="{{route('comics.show', 'index')}}">
+                        <div class="card">
+                            <img src="{{$card['thumb']}}" alt="">
+                            <p class="text-light">{{$card['series']}}</p>
+                        </div>
+                    </a>
                 </div>
                 @endforeach
+                <!--  -->
                 <div class="col-12">
                     <div class="btn text-light">
                         <a href="#">load more</a>

@@ -28,6 +28,18 @@ Route::get('/comics', function () {
     return view('comics', compact('cards'));
 })->name('comics');
 
+// Modifico la rotta per mostrare i link delle singole card tramite un parametro id
+Route::get('/comics/{id}', function ($id) {
+    $cards = config("db.cards");
+    if ($id >= 0 && is_numeric($id) && $id < count($cards)) {
+        $card = $cards[$id];
+        dd($card);
+        return view('comics.show', compact('card'));
+    } else {
+        abort(404);
+    }
+})->name('comics.show');
+
 Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
