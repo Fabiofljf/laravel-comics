@@ -19,14 +19,19 @@
                 <img src="../img/dc-logo.png" alt="logo comics">
             </div>
             <!-- /.col logo -->
-            <div class="col">
-                <ul class="d-flex mb-0">
-                    @foreach ($navbarr as $nav)
-                        <li>
-                            <a href="#">{{$nav['title']}}</a>
-                        </li>
-                    @endforeach
-                </ul>
+            <div class="col-8 d-flex">
+                <nav class="nav align-items-center">
+                    <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">Home</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">Comics</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{route('movies')}}">movies</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{route('tv')}}">tv</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'games' ? 'active' : '' }}" href="{{route('games')}}">games</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }}" href="{{route('collectibles')}}">collectibles</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'videos' ? 'active' : '' }}" href="{{route('videos')}}">videos</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'fans' ? 'active' : '' }}" href="{{route('fans')}}">fans</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'news' ? 'active' : '' }}" href="{{route('news')}}">news</a>
+                    <a class="nav-link {{ Route::currentRouteName() === 'shop' ? 'active' : '' }}" href="{{route('shop')}}">shop</a>
+                </nav>
             </div>
             <!-- /.col navBar -->
             <div class="col">

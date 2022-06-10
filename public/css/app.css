@@ -10263,21 +10263,14 @@ a {
 .DownBarr .row .col img {
   width: 75px;
 }
-.DownBarr li {
-  list-style-type: none;
-  text-transform: uppercase;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.DownBarr li a {
+.DownBarr a {
   color: #464646;
   font-weight: 600;
   text-decoration: none;
 }
-.DownBarr li a:hover, .DownBarr li a.active {
-  color: #0282f9;
-  border-bottom: 10px solid #0282f9;
-  padding-bottom: 46px;
+.DownBarr a:hover, .DownBarr a.active {
+  background-color: #0282f9;
+  color: white;
 }
 
 #jumbotron {

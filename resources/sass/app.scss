@@ -46,21 +46,14 @@ $C-NavBar: #464646;
             }
         }
     }
-    li {
-        list-style-type: none;
-        text-transform: uppercase;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        a {
-            color: $C-NavBar;
-            font-weight: 600;
-            text-decoration: none;
-            &:hover,
-            &.active {
-                color: $Bg-Primary;
-                border-bottom: 10px solid $Bg-Primary;
-                padding-bottom: 46px;
-            }
+    a {
+        color: $C-NavBar;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover,
+        &.active {
+            background-color: $Bg-Primary;
+            color: $Bg-Nav;
         }
     }
 }
